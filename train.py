@@ -203,16 +203,13 @@ def matplot_acc_loss(train_process):
     plt.show()
 
 
-
-
-
 if __name__ == '__main__':
 
     AlexNet = AlexNet()
 
     train_dataloader, val_dataloader = train_val_data_process()
 
-    train_process = train_model_process(AlexNet, train_dataloader, val_dataloader, num_epochs=20)
+    train_process = train_model_process(AlexNet, train_dataloader, val_dataloader, num_epochs=25)
 
     matplot_acc_loss(train_process)
 
